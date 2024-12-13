@@ -1,0 +1,153 @@
+.create_assistant_form_content {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+
+  .create_assistant_form_content_left,
+  .create_assistant_form_content_main,
+  .create_assistant_form_content_right {
+    flex: 1;
+    margin: 0 5px;
+  }
+}
+
+.create_assistant_form_content_left {
+  .form-label {
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0 0 8px 5px;
+    display: flex;
+    align-items: center;
+
+    .search_num {
+      position: absolute;
+      top: -36px;
+    }
+
+    :deep(.mdi-help-circle) {
+      color: #bababa !important;
+    }
+
+    p {
+      display: inline-block;
+    }
+
+    .form-label-flex {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .required {
+        color: red;
+      }
+
+      p {
+        display: flex;
+        align-items: self-end;
+
+        .description {
+          font-size: 12px;
+          color: #c6c7c7;
+          display: inline-block;
+          width: 280px;
+          margin-left: 8px;
+        }
+      }
+      .AI {
+        color: #3b84f2;
+        font-weight: bold;
+        cursor: pointer;
+
+        span {
+          display: flex;
+          align-items: center;
+        }
+
+        .aiBulb {
+          width: 11px;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .form-label-flex-reply {
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid #dcdedd;
+      .reply {
+        font-weight: bold;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+.form_source {
+  .create_assistant_form_source {
+    .ant-input,
+    .ant-select,
+    .ant-input-number {
+      min-height: 45px;
+    }
+
+    .ant-select-selector {
+      min-height: 45px !important;
+      height: 100% !important;
+    }
+
+    .ant-input-number-input-wrap {
+      line-height: 45px !important;
+    }
+  }
+
+  .guidanceJsonQuestionListButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form_source_setting {
+    .form_source_setting_title {
+      display: flex;
+      align-items: self-end;
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid #dcdedd;
+
+      h1 {
+        width: 65px;
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: 10px;
+      }
+
+      span {
+        font-size: 12px;
+        color: #c6c7c7;
+        display: inline-block;
+        width: 280px;
+        margin-left: 8px;
+      }
+    }
+  }
+}
+.ant-form-item-required,
+.ant-input-number {
+  width: 100% !important;
+}
+
+.AI {
+  color: #3b84f2;
+  font-weight: bold;
+  cursor: pointer;
+
+  span {
+    display: flex;
+    align-items: center;
+  }
+
+  .aiBulb {
+    width: 11px;
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,16 @@
+.create_assistant {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #f7f9fb;
+
+  .create_assistant_form {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 16px;
+  }
+}

@@ -1,0 +1,65 @@
+.header {
+  height: 60px;
+  box-shadow: 5px 5px 8px 0px #eaeced;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header_left_info {
+    width: 270px;
+
+    .user-avatar-content {
+      display: flex;
+      align-items: center;
+      .user_head_sculpture_url {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        margin-left: 10px;
+      }
+
+      .leftArrow {
+        transform: rotate(-90deg);
+        margin-left: 15px;
+      }
+
+      .assistant-info {
+        font-size: 13px;
+        margin-left: 8px;
+
+        h3 {
+          width: 100px;
+          white-space: nowrap; /* 禁止换行 */
+          overflow: hidden; /* 隐藏溢出部分 */
+          text-overflow: ellipsis; /* 超出部分显示省略号 */
+        }
+      }
+    }
+  }
+
+  .header_content {
+    display: flex;
+
+    div {
+      margin: 0 20px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .active {
+      border-bottom: 4px solid #0085ff;
+      color: #0085ff;
+      font-weight: bold;
+    }
+  }
+
+  .header_right_button {
+    width: 180px;
+    display: flex;
+    margin-right: 30px;
+
+    .publish {
+      margin-left: 20px;
+    }
+  }
+}

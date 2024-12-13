@@ -1,0 +1,44 @@
+.layouts-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f9fb;
+  display: flex;
+  flex-direction: column;
+
+  .silder-wrapper {
+    width: 14%;
+    height: 100%;
+    background-color: #f7f9fb;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ant-layout {
+    background-color: #fff;
+  }
+
+  .content {
+    flex: 1;
+    padding: 30px;
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+
+  .ratubrain-record-conent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 86%;
+    height: 40px;
+    z-index: 3;
+    color: #bbb;
+    font-size: 12px;
+  }
+}
+
+:deep(.ant-layout-footer) {
+  padding: 0 !important;
+}

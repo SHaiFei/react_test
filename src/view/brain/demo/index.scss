@@ -1,0 +1,161 @@
+.brain-item {
+  width: 180px;
+  height: 255px;
+  background: #ffffff
+    linear-gradient(165deg, rgba(255, 255, 255, 0.35) 0%, rgba(212, 251, 255, 0.15) 51%, rgba(180, 219, 255, 0.34) 100%);
+  box-shadow: 0px 0px 6px 0px rgba(0, 30, 57, 0.05);
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-top: 12px;
+  &:hover {
+    border-color: #0085ff;
+  }
+
+  &:hover .brain-item-hover {
+    bottom: 0;
+  }
+
+  &:hover .brain-item-controls {
+    opacity: 0;
+  }
+  .brain-introduce {
+    height: 195px;
+    border-bottom: 1px solid #e5f3ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .brain-item-logo {
+      width: 120px;
+      height: 120px;
+      position: relative;
+      margin-bottom: 12px;
+      .white-mask {
+        width: 100%;
+        height: 30%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.5) 45%,
+          rgba(255, 255, 255, 0.75) 70%,
+          rgba(255, 255, 255, 0.95) 90%,
+          rgba(255, 255, 255, 1) 100%
+        );
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .brain-item-name {
+      width: 90px;
+      height: 18px;
+      font-size: 14px;
+      color: #313131;
+      line-height: 18px;
+      overflow: hidden;
+      opacity: 0.9;
+      letter-spacing: 1px;
+      font-weight: 600;
+      text-align: center;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-family: Roboto, "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", BlinkMacSystemFont,
+        -apple-system, "Segoe UI", "Microsoft Yahei", Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+        Helvetica, Arial, sans-serif;
+    }
+
+    .brain-item-subtitle {
+      width: 150px;
+      height: 28px;
+      opacity: 0.9;
+      font-size: 10px;
+      font-weight: 400;
+      color: #313131;
+      line-height: 14px;
+      margin-top: 8px;
+      margin-bottom: 6px;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      font-family: Roboto, "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", BlinkMacSystemFont,
+        -apple-system, "Segoe UI", "Microsoft Yahei", Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+        Helvetica, Arial, sans-serif;
+    }
+  }
+
+  .brain-item-controls {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 15px;
+
+    .controls-left,
+    .controls-right {
+      display: flex;
+      align-items: center;
+    }
+    .user_name-ellipsis {
+      width: 88px;
+      text-align: end;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .logo {
+      width: 18px;
+      height: 18px;
+    }
+
+    .label {
+      font-size: 12px;
+      font-weight: normal;
+      color: #313131;
+      line-height: 12px;
+      font-family: Roboto, "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", BlinkMacSystemFont,
+        -apple-system, "Segoe UI", "Microsoft Yahei", Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+        Helvetica, Arial, sans-serif;
+    }
+  }
+
+  .brain-item-hover {
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    bottom: -45px;
+    transition: all 0.1s linear;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 15px;
+
+    .brain-chat-btn {
+      border-radius: 15px;
+      .brain-chat-label {
+        color: #fff;
+        margin-left: 3px;
+      }
+    }
+
+    .brain-hover-btn {
+      width: 18px;
+      border: 1px solid #0085ff;
+      border-radius: 3px;
+    }
+  }
+}
